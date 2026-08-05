@@ -1,29 +1,21 @@
-import AboutMetrics from "@/components/AboutMetrics";
-import ContactSection from "@/components/ContactSection";
-import EducationSection from "@/components/EducationSection";
-import ExperienceSection from "@/components/ExperienceSection";
-import Footer from "@/components/Footer";
-import HeroSection from "@/components/HeroSection";
-import PhilosophySection from "@/components/PhilosophySection";
-import ProjectsSection from "@/components/ProjectsSection";
-import SkillsSection from "@/components/SkillsSection";
-import TopNavBar from "@/components/TopNavBar";
+import { AboutSection } from "@/components/sections/about/about-section";
+import { BackendJourneySection } from "@/components/sections/backend-journey/backend-journey-section";
+import { ContactSection } from "@/components/sections/contact/contact-section";
+import { ExperienceSection } from "@/components/sections/experience/experience-section";
+import { ExpertiseSection } from "@/components/sections/expertise/expertise-section";
+import { HeroSection } from "@/components/sections/hero/hero-section";
+import { ProjectsSection } from "@/components/sections/projects/projects-section";
 
 export default function Home() {
   return (
-    <>
-      <TopNavBar />
-      <main style={{ paddingTop: "96px", overflowX: "hidden" }}>
-        <HeroSection />
-        <AboutMetrics />
-        <ExperienceSection />
-        <ProjectsSection />
-        <SkillsSection />
-        <PhilosophySection />
-        <EducationSection />
-        <ContactSection />
-      </main>
-      <Footer />
-    </>
+    <main>
+      <HeroSection />
+      <AboutSection />
+      <ExperienceSection />
+      <BackendJourneySection />
+      <ProjectsSection />
+      <ExpertiseSection />
+      <ContactSection />
+    </main>
   );
 }
