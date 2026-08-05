@@ -1,6 +1,5 @@
 import { ExternalLink, Mail } from "lucide-react";
 
-import { CursorSpotlight } from "@/components/motion/cursor-spotlight";
 import { ContactForm } from "@/components/sections/contact/contact-form";
 import { contact } from "@/lib/content/contact";
 
@@ -15,12 +14,11 @@ const CHANNELS = [
 /** Contact — §9.11. Form + direct channels, contained gradient background. */
 export function ContactSection() {
   return (
-    <CursorSpotlight
+    <section
       id="contact"
-      className="border-border scroll-mt-16 border-t px-6 py-24 sm:px-10 lg:px-16 lg:py-32"
-      color="var(--accent-warm)"
+      className="border-border mx-auto w-full max-w-6xl scroll-mt-16 border-t px-6 py-24 sm:px-10 lg:px-16 lg:py-32"
     >
-      <div className="mx-auto w-full max-w-6xl">
+      <div>
         <p className="text-text-secondary mb-4 font-mono text-sm tracking-wide uppercase">
           06 — Contact
         </p>
@@ -63,6 +61,6 @@ export function ContactSection() {
           </div>
         </div>
       </div>
-    </CursorSpotlight>
+    </section>
   );
 }

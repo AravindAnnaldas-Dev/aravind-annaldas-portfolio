@@ -27,18 +27,28 @@ export function HeroBackground() {
 
       <FloatingChip
         label="useQuery()"
-        className="top-[18%] left-[8%] hidden sm:block"
+        className="top-[18%] left-[10%] hidden sm:block"
         delay={0}
       />
       <FloatingChip
         label="<ProtectedRoute />"
-        className="top-[62%] left-[14%] hidden md:block"
+        className="top-[70%] left-[60%] hidden md:block"
         delay={1.2}
       />
       <FloatingChip
         label="POST /bookings"
-        className="top-[28%] right-[10%] hidden sm:block"
+        className="top-[28%] right-[20%] hidden sm:block"
         delay={2.1}
+      />
+      <FloatingChip
+        label="async function()"
+        className="top-[48%] right-[6%] hidden lg:block"
+        delay={0.6}
+      />
+      <FloatingChip
+        label="GET /projects"
+        className="top-[60%] left-[4%] hidden sm:block"
+        delay={1.7}
       />
     </div>
   );

@@ -7,6 +7,7 @@ import { Magnetic } from "@/components/motion/magnetic";
 import { TextReveal } from "@/components/motion/text-reveal";
 import { HeroBackground } from "@/components/sections/hero/hero-background";
 import { ScrollCue } from "@/components/sections/hero/scroll-cue";
+import { ResumePreview } from "@/components/shared/resume-preview";
 import { Button } from "@/components/ui/button";
 import { contact } from "@/lib/content/contact";
 import { useHashLinkClick } from "@/lib/hooks/use-hash-link-click";
@@ -64,8 +65,7 @@ export function HeroSection() {
             render={
               <a
                 href={contact.resumeHref}
-                target="_blank"
-                rel="noopener noreferrer"
+                download="Aravind_Annaldas_Frontend_Engineer.pdf"
               />
             }
             nativeButton={false}
@@ -74,6 +74,8 @@ export function HeroSection() {
           >
             Download Resume
           </Button>
+
+          <ResumePreview glow />
         </div>
       </div>
 
