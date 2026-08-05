@@ -1,6 +1,7 @@
 "use client";
 
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -45,9 +46,20 @@ export function Nav() {
         <div className="relative mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-6 sm:px-10 lg:px-16">
           <Link
             href="/"
-            className="font-display text-text-primary focus-visible:outline-ring text-lg font-semibold tracking-tight focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+            aria-label="Aravind Annaldas — home"
+            className="focus-visible:outline-ring flex shrink-0 items-center gap-2.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
           >
-            AA
+            <Image
+              src="/avatar.png"
+              alt=""
+              width={36}
+              height={36}
+              className="border-border size-9 rounded-full border object-cover"
+              priority
+            />
+            <span className="font-display text-text-primary text-lg font-semibold tracking-tight">
+              Aravind
+            </span>
           </Link>
 
           <nav
